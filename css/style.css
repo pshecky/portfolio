@@ -1,0 +1,338 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a h1{
+  /* center header items */
+  text-align: right;
+  position: relative;
+  top: -35px;
+  left: -10px;
+}
+
+header img{
+  align-items: left;
+  max-width: 40px;
+}
+
+nav{
+  text-align: center;
+  /* center nav items */
+  /* change font size */
+}
+nav li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+nav li:hover {
+  color: black;
+}
+
+nav li .active {
+  color: black;
+}
+
+body{
+  /* background color */
+  /* default text color*/
+  /* margins */
+  font-family: "Muli", sans-serif;
+  color: black;
+}
+.coral{
+  background-color: #ff8e79;
+}
+
+.greenery{
+  background-color: #88B04B;
+}
+
+.violet{
+  background-color: #5F4B8B;
+  color: white;
+}
+
+h1, h2,h3, p{
+  margin: 10px;
+}
+
+footer{
+  /* center footer items */
+  /* positioned always at the bottom of the screen */
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* decide grid or flex */
+}
+
+.flex img{
+  /* size images on landing page*/
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.landing-page{
+  text-align: center;
+}
+
+.landing-page h1{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.landing-page h2{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+/* content page formatting */
+img{
+  margin: 0 auto;
+}
+
+.FIRST-IMAGE img{
+  display: block;
+  max-width: 330px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 10px solid #E1E1E1;
+}
+
+.SECOND-IMAGE img{
+  display: block;
+  max-width: 330px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 10px solid #E1E1E1;
+}
+
+.THIRD-IMAGE img{
+  display: block;
+  max-width: 330px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 10px solid #E1E1E1;
+}
+
+p{
+  display:block;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+.lc-heading{
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+main h2{
+  font-size: 30px;
+}
+
+main h3{
+  font-size: 23px;
+}
+
+main p{
+  font-size: 18px;
+}
+/* .lc-heading h1{ */
+  /* background-attachment: fixed; /* Parallax effect */
+  /* background-image: url("../images/lc-background.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  /* background-position: center;  /* Parallax effect */
+  /* background-repeat: no-repeat; /* Parallax effect */
+  /* background-size: cover;       /* Parallax effect */
+
+  /* color: white; */
+  /* height: 100px; */
+  /* }                /* Parallax effect */
+.flex-gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-gallery img{
+  max-width: 320px;
+  border-radius: 8px;
+}
+
+.overlay{
+  display: none;}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex img{
+    /* size images on landing page*/
+    width: 350px;
+    margin: 10px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav li{
+    display: inline-block;
+    padding: 10px;
+  }
+
+  header img{
+    margin: 10px;
+  }
+
+  a h1{
+    /* center header items */
+    text-align: right;
+    position: relative;
+    top: -50px;
+    left: -10px;
+    font-size: 20px;
+  }
+
+  .landing-page h1{
+  font-size: 60px;
+  }
+
+  h1, h2,h3, p{
+    margin: 30px;
+  }
+
+  .lc-heading{
+    font-size: 47px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  main h2{
+    font-size: 40px;
+  }
+
+  main h3{
+    font-size: 30px;
+  }
+
+  main p{
+    font-size: 24px;
+    padding-top: 2px;
+  }
+
+  .FIRST-IMAGE img{
+    max-width: 400px;
+  }
+
+  .SECOND-IMAGE img{
+    max-width: 400px;
+  }
+
+  .THIRD-IMAGE img{
+    max-width: 400px;
+  }
+
+  .flex-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flex-gallery img{
+    border-radius: 8px;
+    max-width: 365px;
+    padding-bottom: 10px;
+  }
+
+  .overlay{
+    display: none;
+  }
+}
+
+@media screen and (min-width:800px) {
+  .flex{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex img{
+    /* size images on landing page*/
+    width: 450px;
+    margin: 10px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav li{
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .flex-gallery img{
+    max-width: 400px;
+    padding-bottom: 20px;
+    border-radius: 15%;
+  }
+
+  header img{
+    position: relative;
+    left: 15px;
+    top: 15px;
+  }
+
+  .coral main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .first h2,h3,p{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .FIRST-IMAGE img{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .second h2,h3,p{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .SECOND-IMAGE img{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .third h2,h3,p{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .THIRD-IMAGE img{
+    grid-column: 2;
+    grid-row: 3;
+  }
