@@ -510,12 +510,10 @@ main p{
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .footer {
-      animation-duration: 0s !important;
+    footer {
+
       animation: none !important;
-      animation-iteration-count: 0 !important;
-      -webkit-animation-duration: 0s !important;
-      -webkit-animation-iteration-count: 0 !important;
+
     }
 
   }
