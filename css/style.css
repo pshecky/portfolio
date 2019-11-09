@@ -607,6 +607,12 @@ main p{
 @media (prefers-reduced-motion: reduce) {
     footer {
       animation: none !important;
+      color: white;
     }
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(0deg);
+    }
+
+
 
   }
