@@ -5,45 +5,83 @@
     <title>Peri Shechtman</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="icon"
+      type="image/png"
+      href="images/colors.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <a href="index.html">
-      <img src="images/colors.png" alt="ALT TEXT"/>
-      </a>
-      <div class=landing-page>
-        <h1>the PANTONE portfolio</h1>
-      </div>
-    </header>
-    <div class="nav">
-      <nav>
-        <ul>
-          <li><a href="living-coral.html">2019</a></li>
-          <li><a href="ultra-violet.html">2018</a></li>
-          <li><a href="greenery.html">2017</a></li>
-          <li><a href="gallery.html">Archives</a></li>
-        </ul>
-      </nav>
+    <div class="skip"><a href="#main">Jump to Content</a></div>
+    <div class="page_container">
+        <header>
+          <a href="index.html">
+          <img src="images/colors.png" alt="Color wheel icon"/>
+          </a>
+          <div class=landing-page>
+            <h1>the PANTONE portfolio</h1>
+          </div>
+        </header>
+        <div class="nav">
+          <nav>
+            <ul>
+              <li><a class="current" href="index.html">Home</a></li>
+              <li><a href="living-coral.html">2019</a></li>
+              <li><a href="ultra-violet.html">2018</a></li>
+              <li><a href="greenery.html">2017</a></li>
+              <li><a href="gallery.html">Archives</a></li>
+            </ul>
+          </nav>
+        </div>
+        <br>
+        <main id="main">
+        <div class=landing-page id="welcome">
+          <h2>Welcome to my portfolio inspired by PANTONE’s Colors of the Year. Every year Pantone selects one signature swatch to represent the year as a whole. As an avid follower of @Pantone on Instagram, I’ve seen the progression of colors throughout the years and want to share some of the most recent ones with you!
+          </h2>
+        </div>
+        <div class=flex>
+        <a href="living-coral.html">
+            <img src="images/livingcoral.png" alt="Living Coral: 2019 Color of the Year"/>
+          </a>
+        <a href="ultra-violet.html">
+            <img src="images/ultraviolet.png" alt="Ultra Violet: 2018 Color of the Year"/>
+          </a>
+        <a href="greenery.html">
+            <img src="images/greenery.png" alt="Greenery: 2017 Color of the Year"/>
+          </a>
+        </div>
+        <br>
+        <div class="contact">
+          <form action="https://formspree.io/xoqqqkpv" method="POST">
+            <fieldset>
+                <legend>Get in Contact with Me!</legend>
+                <label for="name">Name</label>
+                <input type="text" id = "name"><br/>
+                <label> Email:
+                    <input type="email">
+                </label><br/>
+                <label for="message">Message:</label>
+                <input type="text" id = "message"><br>
+                <input type = "submit" value = "Send">
+              </fieldset>
+          </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </main>
+          <footer>
+            <p>Made by Peri Shechtman</p>
+          </footer>
     </div>
-    <br>
-    <main>
-    <div class=landing-page>
-      <h2>a collection of the decade's top colors</h2>
-    </div>
-    <div class=flex>
-    <a href="living-coral.html">
-        <img src="images/livingcoral.png" alt="ALT TEXT"/>
-      </a>
-    <a href="ultra-violet.html">
-        <img src="images/ultraviolet.png" alt="ALT TEXT"/>
-      </a>
-    <a href="greenery.html">
-        <img src="images/greenery.png" alt="ALT TEXT"/>
-      </a>
-    </div>
-  </main>
-    <footer>
-      <!-- something here -->
-    </footer>
+  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3QMN7T5ZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y3QMN7T5ZV');
+</script>
+</html>
