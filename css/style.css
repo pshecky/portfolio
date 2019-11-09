@@ -15,27 +15,31 @@ footer{
   animation-iteration-count: infinite;
 }
 
+#welcome{
+  line-height: 1.5;
+}
+
+.page_container{
+  position: relative;
+  min-height: 100vh;
+}
 
 /* Standard syntax */
 @keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: pink;}
-  50%  {background-color: blue;}
-  75%  {background-color: purple;}
-  100% {background-color: green;}
+  0%   {background-color: #ffbeba;}
+  25%  {background-color: #fcbaff;}
+  50%  {background-color: #bad3ff;}
+  75%  {background-color: #dab5ff;}
+  100% {background-color: #b5ffe3;}
 }
 
 footer p{
   margin: auto auto;
   position: relative;
-  top: -7px;
+  top: 0px;
 }
 
 footer a:visited{
-  color: white;
-}
-
-.violet a:visited{
   color: white;
 }
 
@@ -54,7 +58,7 @@ img:hover
 .contact fieldset{
   text-align: left;
   line-height: 2;
-  margin: 8px 18px;
+  margin: 8px 30px;
   font-size: 20px;
 }
 
@@ -114,6 +118,7 @@ a h1{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+  font-size: 18px;
 }
 
 .skip a:focus{
@@ -124,7 +129,6 @@ a h1{
 }
 
 header img{
-  align-items: left;
   max-width: 40px;
 }
 
@@ -140,6 +144,12 @@ nav li{
   padding: 10px;
   color: black;
   font-size: 18px;
+  background-color: white
+}
+
+.violet nav li{
+  background-color: #EEAAFE;
+  color: black;
 }
 
 nav li a:visited{
@@ -155,18 +165,19 @@ nav li .active {
 }
 
 .current{
-  border: 4px dashed #4cf8fd;
+  border: 4px dashed blue;
 }
 
 body{
   /* background color */
   /* default text color*/
   /* margins */
-  font-family: "Muli", sans-serif;
+  font-family: Helvetica;
   color: black;
 }
 .coral{
-  background-color: #ff8e79;
+  background-color: #fcafa2;
+
 }
 
 .greenery{
@@ -174,7 +185,7 @@ body{
 }
 
 .violet{
-  background-color: #5F4B8B;
+  background-color: #4f3882;
   color: white;
 }
 
@@ -206,7 +217,15 @@ h1, h2,h3, p{
   font-size: 35px;
   text-align: center;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: black;
+    letter-spacing: .1em;
+    text-shadow:
+      4px 4px 0px #d5d5d5,
+      5px 5px 0px black;
 }
+
 
 .landing-page h2{
   font-size: 20px;
@@ -297,6 +316,19 @@ main p{
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .landing-page h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: black;
+      letter-spacing: .05em;
+      text-shadow:
+        5px 5px 0px #d5d5d5,
+        6px 6px 0px black;
+  }
 
   .flex{
     display: flex;
@@ -393,7 +425,7 @@ main p{
   .flex img{
     /* size images on landing page*/
     width: 450px;
-    margin: 10px;
+    margin-bottom: 70px;
     border-radius: 8px;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -402,8 +434,9 @@ main p{
 
   nav li{
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
+    font-size: 20px;
   }
 
   .flex-gallery img{
@@ -447,6 +480,7 @@ main p{
     grid-column: 1;
     grid-row: 1;
     margin-left: 50px;
+    height: 15%;
   }
 
   .FIRST-IMAGE {
@@ -459,6 +493,7 @@ main p{
     grid-row: 2;
     margin-right: 50px;
     margin-left: 50px;
+    height: 15%;
   }
 
   .SECOND-IMAGE {
@@ -470,6 +505,7 @@ main p{
     grid-column: 1;
     grid-row: 3;
     margin-left: 50px;
+    height: 15%;
   }
 
   .THIRD-IMAGE {
@@ -484,7 +520,7 @@ main p{
   position: absolute;
   top: -40px;
   -webkit-transition: top 1s auto;/* Your code here - set to default setting */
-  transition: top 1s auto;/* Your code here - set to default setting */
+  transition: top 1s;/* Your code here - set to default setting */
   z-index: 1;
   }
 
@@ -507,13 +543,33 @@ main p{
     font-size: 28px;
     margin-bottom: 5px;
   }
+
+  #parallax{
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/colorspectrum.png");      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+
+    color: white;
+    height: 300px;                /* Parallax effect */
+    width: 100%;
+  }
+
+  #parallax h1{
+    position: relative;
+    top: 60px;
+  }
+
+ .first p {
+    margin-top: 50px;
+  }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
     footer {
-
       animation: none !important;
-
     }
 
   }
