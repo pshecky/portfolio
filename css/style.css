@@ -43,7 +43,7 @@ footer a:visited{
   color: white;
 }
 
-:focus{
+*:focus{
   border: 2px solid black;
 /*Add the selector and code to put a 2px black border around all elements in focus.*/
 }
@@ -606,6 +606,10 @@ main p{
   .flip-card-back {
     background-color: white;
     color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
   }
 
