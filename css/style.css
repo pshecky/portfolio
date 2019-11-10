@@ -226,6 +226,14 @@ h1, h2,h3, p{
       5px 5px 0px black;
 }
 
+.violet .landing-page h1{
+  color: white;
+    letter-spacing: .1em;
+    text-shadow:
+      4px 4px 0px black,
+      5px 5px 0px white;
+}
+
 
 .landing-page h2{
   font-size: 20px;
@@ -567,8 +575,8 @@ main p{
 
   .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
   margin-top: 20px;
@@ -613,6 +621,10 @@ main p{
     transform: rotateY(0deg);
     }
 
+    html{scroll-behavior: auto;}
 
-
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
   }
